@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		663FBD3B27CB769300536F61 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66A1B96C27A1EE7600D24C00 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A1B96F27A1EE7600D24C00 /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
 		66A1B97127A1EE7600D24C00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		66A1B96327A1EE7500D24C00 = {
 			isa = PBXGroup;
 			children = (
+				663FBD3B27CB769300536F61 /* README.md */,
 				66A1B96E27A1EE7600D24C00 /* GuessTheFlag */,
 				66A1B96D27A1EE7600D24C00 /* Products */,
 			);

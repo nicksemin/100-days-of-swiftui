@@ -12,9 +12,14 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     
+    @State private var animationDegrees = 0.0
+    @State private var flagNumber = 0
+    @State private var transparency = [1.0, 1.0, 1.0]
+    @State private var scale = [1.0, 1.0, 1.0]
+    
     @State private var round = 1
     @State private var gameOver = false
-    
+        
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     
     @State private var correctAnswer = Int.random(in: 0...2)
@@ -46,13 +51,22 @@ struct ContentView: View {
         }
             
                 ForEach(0..<3){ number in
+                    
                     Button{
-                        flagTapped(number)
-                    } label: {
+                       withAnimation{
+                        flagNumber = flagTapped(number)
+                        animationDegrees += 360
+                       }
+                    }
+                    label: {
                         Image(countries[number]).renderingMode(.original)
                             .clipShape(Capsule())
                             .shadow(radius: 5)
+                            .rotation3DEffect(Angle.degrees(number == flagNumber ? animationDegrees : 0), axis:( x: 0, y: 1, z:0))
+                            .opacity(transparency[number])
+                            .scaleEffect(scale[number])
                     }
+                    
             }
         }
         .frame(maxWidth: .infinity)
@@ -85,7 +99,7 @@ struct ContentView: View {
         }
     }
     }
-    func flagTapped(_ number: Int){
+    func flagTapped(_ number: Int) -> Int{
         if number == correctAnswer{
             scoreTitle = "Correct!"
             score += 1
@@ -104,11 +118,23 @@ struct ContentView: View {
         else{
             gameOver = true
         }
+        
+        for i in 0...2{
+            if i != number{
+                transparency[i] = 0.25
+                scale[i] = 0.75
+            }
+        }
+        
+        return number
     }
     
     func askQuestion(){
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        animationDegrees = 0
+        transparency = [1.0, 1.0, 1.0]
+        scale = [1.0, 1.0, 1.0]
     }
     
     func reset(){
