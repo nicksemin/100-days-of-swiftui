@@ -142,6 +142,8 @@ struct ContentView: View {
         scoreTitle = ""
         score = 0
         round = 1
+        transparency = [1.0, 1.0, 1.0]
+        scale = [1.0, 1.0, 1.0]
         gameOver = false
     }
     
