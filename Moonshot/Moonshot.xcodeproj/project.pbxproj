@@ -43,7 +43,7 @@
 		66DB82FB27E47416006C3646 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		66DB82FD27E4769E006C3646 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		66DB82FF27E478B7006C3646 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		66DB830227E48CCA006C3646 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Moonshot/README.md; sourceTree = SOURCE_ROOT; };
+		66DB830227E48CCA006C3646 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		66E2788E27E1003200E8BC16 /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
 		66E2789027E1013400E8BC16 /* CrewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMember.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +62,7 @@
 		66161F0727D5F7E700DDEFD6 = {
 			isa = PBXGroup;
 			children = (
+				66DB830227E48CCA006C3646 /* README.md */,
 				66161F1227D5F7E700DDEFD6 /* Moonshot */,
 				66161F1127D5F7E700DDEFD6 /* Products */,
 			);
@@ -90,7 +91,6 @@
 				661C98D127D80F28006793F8 /* Color-Theme.swift */,
 				661C98CF27D80327006793F8 /* Mission.swift */,
 				661C98CB27D7680D006793F8 /* Astronaut.swift */,
-				66DB830227E48CCA006C3646 /* README.md */,
 				661C98C827D76782006793F8 /* astronauts.json */,
 				661C98C727D76782006793F8 /* missions.json */,
 				661C98CD27D7FF77006793F8 /*  Bundle-Decodable.swift */,
