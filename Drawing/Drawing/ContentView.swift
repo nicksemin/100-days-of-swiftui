@@ -17,6 +17,9 @@ struct ContentView: View {
                 Text("Challenge: arrow")
             }
                     
+            NavigationLink(destination: ColorCyclingRectangleView()){
+                Text("Color cycling rectagle w/ gradient")
+            }
                 }
             
                 Section(header: Text("Project 9 samples")){
@@ -36,11 +39,6 @@ struct ContentView: View {
                 Text("drawingGroup w/ Metal")
             }
                     
-            NavigationLink(destination: ColorCyclingRectangle()){
-                Text("Color cycling rectagle w/ gradient")
-            }
-
-                
             NavigationLink(destination: BordersAndFills()){
                 Text("Borders and fills")
             }
