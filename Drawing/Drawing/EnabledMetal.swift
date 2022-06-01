@@ -42,6 +42,7 @@ struct enabledMetal: View {
                 .frame(width: 300, height: 300)
             
             Slider(value: $colorCycle)
+                .padding(35)
         }
     }
 }

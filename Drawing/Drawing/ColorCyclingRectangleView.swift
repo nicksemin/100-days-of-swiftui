@@ -46,7 +46,7 @@ struct ColorCyclingRectangleView: View {
                 .frame(width: 300, height: 300)
             
             Slider(value: $colorCycle)
-                .padding([.bottom, .horizontal])
+                .padding([.bottom, .horizontal], 35)
             
             Slider(value: $gradientPoint, in: 0...1)
                 .padding(.horizontal)
