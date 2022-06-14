@@ -14,17 +14,13 @@ class HobbyListManager: ObservableObject{
         //
     }
     
-    func incrementAmount(hobby: Hobby) {
-        hobby.amount += 1
-    }
-    
     func addHobby(title: String, description: String) {
         hobbys.append(Hobby(id: UUID(), title: title, description: description))
     }
 }
 
 extension Hobby {
-    func increaseAmount() {
+   mutating func increaseAmount() {
         self.amount += 1
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Hobby: Codable, Identifiable {
+struct Hobby: Codable, Identifiable {
     var id: UUID
     
     var title: String

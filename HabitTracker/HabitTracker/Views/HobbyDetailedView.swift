@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HobbyDetailedView: View {
 
-    @State var hobby: Hobby
+    @Binding var hobby: Hobby
     
     var body: some View {
         ZStack {

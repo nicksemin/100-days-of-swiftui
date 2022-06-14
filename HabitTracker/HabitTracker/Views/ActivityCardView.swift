@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ActivityCardView: View {
     
-    let hobbyTitle: String
-    let hobbyDescription: String
+    @Binding var hobbyTitle: String
+    @Binding var hobbyDescription: String
     
     var body: some View {
         ZStack{
@@ -36,11 +36,11 @@ struct ActivityCardView: View {
     }
 }
 
-struct ActivityCardView_Previews: PreviewProvider {
+/*struct ActivityCardView_Previews: PreviewProvider {
     static let hobbyTitle = "Swift"
     static let hobbyDescription = "Coding Challenhe"
     
     static var previews: some View {
         ActivityCardView(hobbyTitle: hobbyTitle, hobbyDescription: hobbyDescription)
     }
-}
+}*/
