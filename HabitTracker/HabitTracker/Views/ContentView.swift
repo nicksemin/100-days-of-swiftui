@@ -21,7 +21,7 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
             LazyVGrid(columns: columns) {
-                ForEach(hobbyManager.hobbys) {  hobby in
+                ForEach($hobbyManager.hobbys) {  hobby in
                     NavigationLink {
                         HobbyDetailedView(hobby: hobby)
                     } label: {

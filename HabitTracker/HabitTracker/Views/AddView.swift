@@ -33,8 +33,8 @@ struct AddView: View {
     }
 }
 
-/*struct AddView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddView()
-    }
-}*/
+//struct AddView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AddView(hobbyManager: [Hobby(id: UUID(), title: "Test", description: "Mocked Hobby")], isPresented: .constant(true))
+//    }
+//}
